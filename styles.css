@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(236, 203, 13);
+}
+
+.top-bar {
+    background-color: aqua;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: flex-start;
+}
+
