@@ -7,21 +7,26 @@ body {
     padding: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-content: flex-start;
+    justify-content: space-between;
 }
 
 .top-bar-sub {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .top-bar-sub-h4 {
-bb
     margin: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .top-bar-sub img {
     height: 50px;
     width: 50%;
+}
+
+.top-bar-sub-p {
+    background-color: rgb(245, 229, 3);
 }
