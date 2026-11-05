@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48"><title>Memora</title>
+  <rect width="48" height="48" rx="11" fill="#0f2747"/>
+  <rect x="11" y="13" width="6.5" height="23" rx="1.2" fill="#ffffff"/>
+  <rect x="19.5" y="9.5" width="6.5" height="26.5" rx="1.2" fill="#ffffff"/>
+  <rect x="28" y="14" width="6.5" height="22" rx="1.2" fill="#ffffff" transform="rotate(16 34.5 36)"/>
+  <rect x="9" y="37" width="30" height="3" rx="1.5" fill="#f2b51d"/>
+</svg>
