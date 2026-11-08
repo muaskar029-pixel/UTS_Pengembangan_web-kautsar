@@ -111,3 +111,37 @@ body {
     aspect-ratio: 4 / 3;     /* tinggi dihitung otomatis dari lebar */
     object-fit: cover;       /* foto di-crop agar pas, tidak gepeng */
 }
+/* Latest Collection: judul di atas, 5 buku berjajar */
+.content-section-collection {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);   /* 5 kolom sama lebar */
+    gap: 22px;
+    margin-top: 72px;
+}
+
+.content-section-collection-head {
+    grid-column: 1 / -1;                     /* judul memenuhi semua kolom */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-section-collection-sub img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    border-radius: 4px;
+}
+
+.book-title {
+    margin: 12px 0 0;
+    font-weight: 600;
+}
+
+.book-author {
+    margin: 2px 0 6px;
+    color: #5d6671;
+}
+
+.status-ok { color: #1d7a4b; }
+.status-no { color: #b3261e; }
