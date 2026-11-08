@@ -5,3 +5,9 @@
 - Sumber: https://commons.wikimedia.org/wiki/File:Helsinki_University_Library_Interior_B_-_Marit_Henriksson.jpg
 - Lisensi: https://creativecommons.org/licenses/by-sa/4.0
 - Wajib mencantumkan kredit (misalnya di footer). Jika foto diubah (warna, crop gabungan), hasilnya harus dibagikan dengan lisensi yang sama.
+
+## tentang-memora.jpg
+"Kolam Perpustakaan Universitas Sumatera Utara" oleh Nafisathallah, CC BY 4.0, via Wikimedia Commons.
+- Sumber: https://commons.wikimedia.org/wiki/File:Kolam_Perpustakaan_Universitas_Sumatera_Utara.jpg
+- Lisensi: https://creativecommons.org/licenses/by/4.0
+- Wajib mencantumkan kredit. Boleh diubah (crop, warna) tanpa syarat lisensi sama.

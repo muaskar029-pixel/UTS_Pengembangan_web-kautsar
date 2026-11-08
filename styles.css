@@ -54,7 +54,7 @@ body {
 }
 
 .hero-flex-right {
-  background-image: url("assets/hero-ruang-baca.jpg");
+  background-image: url("assets/png/hero-ruang-baca.jpg");
   width: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -86,4 +86,28 @@ body {
 
 .service-bar-left {
     padding: 10px;
+}
+
+.content-section {
+    padding-top: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.content-section-about {
+    display: flex;
+    flex-direction: row;
+}
+
+.content-section-about-sub {
+    width: 40%;              /* atur lebarnya saja */
+    border-radius: 12px;
+    overflow: hidden;
+    
+}
+.content-section-about-sub img {
+    display: block;          /* hilangkan celah kecil di bawah gambar */
+    width: 100%;
+    aspect-ratio: 4 / 3;     /* tinggi dihitung otomatis dari lebar */
+    object-fit: cover;       /* foto di-crop agar pas, tidak gepeng */
 }
