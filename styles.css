@@ -1,9 +1,10 @@
 body {
     background-color: rgb(243, 241, 227);
+    margin: 0px;
 }
 
 .top-bar {
-    background-color: rgb(199, 202, 202);
+    background-color: #ffffff;
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -16,7 +17,7 @@ body {
     align-items: center;
 }
 
-.top-bar-sub-h4 {
+.top-bar-sub h4 {
     margin: 0px;
     padding-left: 10px;
     padding-right: 10px;
@@ -27,6 +28,62 @@ body {
     width: 50%;
 }
 
-.top-bar-sub-p {
+.top-bar-sub p {
     background-color: rgb(245, 229, 3);
+}
+
+.hero-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-flex-left {
+    width: 50%;
+    padding: 20px;
+}
+
+.hero-flex-right-text {
+    position: absolute;   /* lepas dari alur, menempel ke .hero-flex-right */
+    left: 32px;           /* jarak dari kiri */
+    bottom: 32px;         /* jarak dari bawah */
+    max-width: 470px;     /* supaya kartu tidak selebar foto */
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 22px;
+    box-shadow: 0 12px 32px rgba(15, 39, 71, 0.22);
+}
+
+.hero-flex-right {
+  background-image: url("/assets/hero-ruang-baca.jpg");
+  width: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-flex-left-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-flex-left-bar h4 {
+    margin: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.service-bar {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-bar-flex-sub {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.service-bar-left {
+    padding: 10px;
 }
