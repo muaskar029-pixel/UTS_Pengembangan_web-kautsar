@@ -54,7 +54,7 @@ body {
 }
 
 .hero-flex-right {
-  background-image: url("/assets/hero-ruang-baca.jpg");
+  background-image: url("assets/hero-ruang-baca.jpg");
   width: 50%;
   background-position: center;
   background-repeat: no-repeat;
