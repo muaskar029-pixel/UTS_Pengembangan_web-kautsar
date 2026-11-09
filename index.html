@@ -1,32 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="design/logo/memora-ikon.svg">
 <title>Memora Homepage</title>
 </head>
 <body>
-<div class="top-bar">
-    <div class="top-bar-sub">
-        <img src="design/logo/memora-logo.svg">
-    </div>
-
-    <div class="top-bar-sub">
-        <h4>Home</h4>
-        <h4>About</h4>
-        <h4>Catalog</h4>
-        <h4>News</h4>
-        <h4>Galery</h4>
-        <h4>Registration</h4>
-        <h4>Contact</h4>
-    </div>
-
-    <div class="top-bar-sub">
-        <p>Ask Librarian</p>
-    </div>
-
+<div class="announce-bar">
+    <p><b>Jumat, 7 November</b> layanan tutup pukul 12.00 karena rapat staf. Buku tetap bisa dikembalikan lewat kotak di depan pintu masuk.</p>
+    <button>x</button>
 </div>
+
+<div class="info-bar">
+    <p>Kampus Utama · Gedung Perpustakaan Lt. 2 · (021) 555-0123</p>
+    <div class="info-bar-sub">
+        <a href="#">Aksesibilitas</a>
+        <a href="login.html">Masuk</a>
+        <div class="info-bar-mode">
+            <button class="info-bar-mode-active">2D</button>
+            <button>3D</button>
+        </div>
+    </div>
+</div>
+
+<header class="top-bar">
+    <div class="top-bar-sub">
+        <img src="design/logo/memora-logo.svg" alt="Logo Memora">
+    </div>
+
+    <nav class="top-bar-sub">
+        <a href="index.html">Home</a>
+        <div class="top-bar-dropdown">
+            <a href="about.html">About</a>
+            <div class="top-bar-dropdown-sub">
+                <a href="about.html#profil">Profil</a>
+                <a href="about.html#visi-misi">Visi & Misi</a>
+                <a href="about.html#tujuan">Tujuan</a>
+                <a href="about.html#struktur">Struktur Organisasi</a>
+            </div>
+        </div>
+        <a href="catalog.html">Catalog</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="registration.html">Registration</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="top-bar-sub">
+        <a href="contact.html" class="top-bar-ask">Ask Librarian</a>
+    </div>
+</header>
 
 <div class="hero-flex">
     <div class="hero-flex-left">
@@ -34,31 +59,36 @@
         <p>Book, e-book, journal, and undergraduate thesis in one search</p>
 
         <div class="hero-flex-left-bar">
-            <h4>Catalog</h4>
-            <h4>E-book</h4>
-            <h4>Journal</h4>
-            <h4>Repository</h4>
-            <h4>Other</h4>
+            <a href="catalog.html">Catalog</a>
+            <a href="catalog.html">E-book</a>
+            <a href="catalog.html">Journal</a>
+            <a href="catalog.html">Repository</a>
+            <a href="catalog.html">Other</a>
         </div>
 
-        <div class="hero-flex-left-search">
-            <input type="text" placeholder="title,author,or subject" name="search">
-        </div>
-       
+        <form class="hero-flex-left-search" action="catalog.html">
+            <input type="text" placeholder="title, author, or subject" name="search">
+            <button type="submit">Cari</button>
+        </form>
+
         <div class="hero-flex-left-bottom">
-            <p>Sering dicari: <tag>Sejarah Indonesia, Pemrograman Web, Novel</tag><button href="">Pencarian lanjutan</button></p>
-            
+            <p>Sering dicari:
+                <a href="catalog.html?search=Sejarah Indonesia">Sejarah Indonesia</a>,
+                <a href="catalog.html?search=Pemrograman Web">Pemrograman Web</a>,
+                <a href="catalog.html?search=Novel">Novel</a>
+            </p>
+            <a href="catalog.html">Pencarian lanjutan</a>
         </div>
     </div>
 
     <div class="hero-flex-right">
         <div class="hero-flex-right-img">
             <div class="hero-flex-right-text">
-                <p>Peminjaman online sudah dibuka untuk semua anggora.<br>
-                Ajukan dari katalog. lalu ambil bukunya di meja sirkulasi
+                <p>Peminjaman online sudah dibuka untuk semua anggota.<br>
+                Ajukan dari katalog, lalu ambil bukunya di meja sirkulasi.
                 </p>
 
-                <button>Cara meminjam</button>
+                <a href="news.html">Cara meminjam</a>
             </div>
         </div>
     </div>
@@ -68,32 +98,32 @@
     <div class="service-bar-flex-sub">
         <div class="service-bar-left">
             <h2>Jam Layanan</h2>
-            <p>Rabu, 4 November</p>
-            <span><button>Semua jam -></button></span>
+            <p id="tanggal-layanan">Rabu, 4 November</p>
+            <a href="about.html">Semua jam -></a>
         </div>
 
         <div class="service-bar-sub">
-            <h2>Ruang Baca Lt.2</h2>
+            <h4>Ruang Baca Lt.2</h4>
             <p>08.00-16.00</p>
         </div>
 
         <div class="service-bar-sub">
-            <h2>Meja Sirkulasi</h2>
+            <h4>Meja Sirkulasi</h4>
             <p>08.00-15.30</p>
         </div>
 
         <div class="service-bar-sub">
-            <h2>Ruang Diskusi Lt. 3</h2>
+            <h4>Ruang Diskusi Lt. 3</h4>
             <p>08.00-16.00</p>
         </div>
 
         <div class="service-bar-sub">
-            <h2>Koleksi Referensi</h2>
+            <h4>Koleksi Referensi</h4>
             <p>08.00-16.00</p>
         </div>
 
         <div class="service-bar-sub">
-            <h2>Layanan Online</h2>
+            <h4>Layanan Online</h4>
             <p>24 jam</p>
         </div>
     </div>
@@ -102,42 +132,27 @@
         <div class="service-bar-left">
             <h2>Layanan Populer</h2>
         </div>
-        <div class="service-bar-sub">
-            <h2>Ruang Baca Lt.2</h2>
-            <p>08.00-16.00</p>
-        </div>
 
-        <div class="service-bar-sub">
-            <h2>Meja Sirkulasi</h2>
-            <p>08.00-15.30</p>
-        </div>
-
-        <div class="service-bar-sub">
-            <h2>Ruang Diskusi Lt. 3</h2>
-            <p>08.00-16.00</p>
-        </div>
-
-        <div class="service-bar-sub">
-            <h2>Koleksi Referensi</h2>
-            <p>08.00-16.00</p>
-        </div>
-
-        <div class="service-bar-sub">
-            <h2>Layanan Online</h2>
-            <p>24 jam</p>
+        <div class="service-bar-button">
+            <a href="catalog.html">Pinjam buku</a>
+            <a href="catalog.html">Perpanjang pinjaman</a>
+            <a href="contact.html">Ruang diskusi</a>
+            <a href="contact.html">Usulan buku</a>
+            <a href="contact.html">Bebas pustaka</a>
+            <a href="contact.html">Cek plagiasi</a>
         </div>
     </div>
 </div>
 
 <div class="content">
-    <div class="content-section">
+    <main class="content-section">
         <div class="content-section-about">
             <div class="content-section-about-sub">
-                <img src="https://muaskar029-pixel.github.io/UTS_Pengembangan_web-kautsar/assets/png/tentang-memora.jpg">
+                <img src="assets/png/tentang-memora.jpg" alt="Gedung Perpustakaan Memora">
             </div>
             <div class="content-section-about-sub">
-                <h1>About Memora</h1>
-                <p>Memora adalah perpustakaan pusat Kampus Utama untuk mahasiswa,dosen,dan tenaga kependidikan. Sejak 2026 katalog,peminjaman, dan ruang bacanya juga bisa dibuka secara online, termasuk dalam mode 3D.</p>
+                <h2>About Memora</h2>
+                <p>Memora adalah perpustakaan pusat Kampus Utama untuk mahasiswa, dosen, dan tenaga kependidikan. Sejak 2026 katalog, peminjaman, dan ruang bacanya juga bisa dibuka secara online, termasuk dalam mode 3D.</p>
                 <div class="content-section-about-sub-total">
                     <div class="content-section-about-sub-total-sub">
                         <h2>12.480</h2><p>Judul Buku</p>
@@ -149,13 +164,13 @@
                         <h2>3.210</h2><p>anggota aktif</p>
                     </div>
                 </div>
-                <button>Profil, visi &,misi,struktur organisasi</button>
+                <a href="about.html">Profil, visi & misi, struktur organisasi -></a>
             </div>
         </div>
         <div class="content-section-collection">
             <div class="content-section-collection-head">
-                <h1>Latest Collection</h1>
-                <button>see catalog -></button>
+                <h2>Latest Collection</h2>
+                <a href="catalog.html">See catalog -></a>
             </div>
             <div class="content-section-collection-sub">
                 <img src="assets/png/buku-bumi-manusia.png" alt="Sampul buku Bumi Manusia">
@@ -164,25 +179,25 @@
                 <span class="status-ok">Tersedia · Rak 2B</span>
             </div>
             <div class="content-section-collection-sub">
-                <img src="/assets/png/buku-laskar-pelangi.png" alt="Sampul buku Laskar Pelangi">
+                <img src="assets/png/buku-laskar-pelangi.png" alt="Sampul buku Laskar Pelangi">
                 <p class="book-title">Laskar Pelangi</p>
                 <p class="book-author">Andrea Hirata</p>
                 <span class="status-no">Dipinjam s.d. 9 Nov</span>
             </div>
             <div class="content-section-collection-sub">
-                <img src="/assets/png/buku-filosofi-teras.png" alt="Sampul buku Filosofi Teras">
+                <img src="assets/png/buku-filosofi-teras.png" alt="Sampul buku Filosofi Teras">
                 <p class="book-title">Filosofi Teras</p>
                 <p class="book-author">Henry Manampiring</p>
                 <span class="status-ok">Tersedia · Rak 4A</span>
             </div>
             <div class="content-section-collection-sub">
-                <img src="/assets/png/buku-clean-code.png" alt="Sampul buku Clean Code">
+                <img src="assets/png/buku-clean-code.png" alt="Sampul buku Clean Code">
                 <p class="book-title">Clean Code</p>
                 <p class="book-author">Robert C. Martin</p>
                 <span class="status-ok">Tersedia · Rak 5C</span>
             </div>
             <div class="content-section-collection-sub">
-                <img src="/assets/png/buku-sejarah-indonesia-modern.png" alt="Sampul buku Sejarah Indonesia Modern">
+                <img src="assets/png/buku-sejarah-indonesia-modern.png" alt="Sampul buku Sejarah Indonesia Modern">
                 <p class="book-title">Sejarah Indonesia Modern</p>
                 <p class="book-author">M. C. Ricklefs</p>
                 <span class="status-ok">Tersedia · Rak 3B</span>
@@ -190,47 +205,227 @@
         </div>
         <div class="content-section-news">
             <div class="content-section-news-head">
-                <h1>Berita & Kegiatan</h1>
-                <button>Semua Berita -></button>
+                <h2>Berita & Kegiatan</h2>
+                <a href="news.html">Semua Berita -></a>
             </div>
             <div class="content-section-news-sub">
                 <div class="content-section-news-sub-flex">
-                    <img src="/assets/png/berita-bedah-buku.jpg" alt="berita-bedah-buku">
-                    <h3>Bedah buku Bumi Manusia bersama komunitas literasi</h3>
-                    <p>kegiatan . 28 Oktober 2026</p>
+                    <img src="assets/png/berita-bedah-buku.jpg" alt="Rak buku perpustakaan">
+                    <h3><a href="berita-bedah-buku.html">Bedah buku Bumi Manusia bersama komunitas literasi</a></h3>
+                    <p>Kegiatan · 28 Oktober 2026</p>
                     <p>120 peserta membahas latar sejarah dan tokoh dalam karya Pramoedya.</p>
-                    <button>Baca selengkapnya -></button>
+                    <a href="berita-bedah-buku.html">Baca selengkapnya -></a>
                 </div>
                 <div class="content-section-news-sub-flex">
-                    <img src="/assets/png/berita-peminjaman-online.jpg" alt="berita-peminjaman-online">
-                    <h3>Peminjaman online dibuka untuk semua anggota</h3>
-                    <p>Layanan . 20 Oktober 2026</p>
+                    <img src="assets/png/berita-peminjaman-online.jpg" alt="Meja sirkulasi perpustakaan">
+                    <h3><a href="berita-peminjaman-online.html">Peminjaman online dibuka untuk semua anggota</a></h3>
+                    <p>Layanan · 20 Oktober 2026</p>
                     <p>Ajukan dari katalog, ambil di meja sirkulasi setelah disetujui pustakawan.</p>
-                    <button>Baca selengkapnya -></button>
+                    <a href="berita-peminjaman-online.html">Baca selengkapnya -></a>
                 </div>
                 <div class="content-section-news-sub-flex">
-                    <img src="/assets/png/berita-pelatihan-literasi.jpg" alt="berita-pelatihan-literasi">
-                    <h3>Pelatihan literasi informasi untuk mahasiswa baru</h3>
-                    <p>Pelatihan . 12 Oktober 2026</p>
-                    <p>Menelusuri katalog, memakai e-journal,dan menyusun daftar pustaka.</p>
-                    <button>Baca selengkapnya -></button>
+                    <img src="assets/png/berita-pelatihan-literasi.jpg" alt="Ruang baca perpustakaan">
+                    <h3><a href="berita-pelatihan-literasi.html">Pelatihan literasi informasi untuk mahasiswa baru</a></h3>
+                    <p>Pelatihan · 12 Oktober 2026</p>
+                    <p>Menelusuri katalog, memakai e-journal, dan menyusun daftar pustaka.</p>
+                    <a href="berita-pelatihan-literasi.html">Baca selengkapnya -></a>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="content-section">
+        <div class="content-section-announcement">
+            <div class="content-section-announcement-head">
+                <h2>Pengumuman</h2>
+                <a href="news.html">Semua pengumuman -></a>
+            </div>
+            <div class="content-section-announcement-sub">
+                <div class="announcement-date">
+                    <h3>07</h3><p>Nov</p>
+                </div>
+                <div class="announcement-text">
+                    <h4>Layanan tutup lebih awal pukul 12.00</h4>
+                    <p>Rapat staf bulanan. Kotak pengembalian di depan pintu tetap dibuka.</p>
+                </div>
+            </div>
+            <div class="content-section-announcement-sub">
+                <div class="announcement-date">
+                    <h3>10</h3><p>Des</p>
+                </div>
+                <div class="announcement-text">
+                    <h4>Batas pengembalian buku semester ganjil</h4>
+                    <p>Semua pinjaman dikembalikan sebelum surat bebas pustaka diterbitkan.</p>
+                </div>
+            </div>
+            <div class="content-section-announcement-sub">
+                <div class="announcement-date">
+                    <h3>30</h3><p>Nov</p>
+                </div>
+                <div class="announcement-text">
+                    <h4>Pendaftaran lomba resensi buku tingkat kampus</h4>
+                    <p>Terbuka untuk mahasiswa aktif, maksimal satu naskah per orang.</p>
+                </div>
+            </div>
+            <div class="content-section-announcement-sub">
+                <div class="announcement-date">
+                    <h3>03</h3><p>Nov</p>
+                </div>
+                <div class="announcement-text">
+                    <h4>1.250 judul e-journal baru dari Garuda</h4>
+                    <p>Bisa diakses dengan akun anggota dari dalam maupun luar kampus.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <aside class="content-section">
         <div class="content-section-date">
             <p>Hari ini</p>
-            <p>Rabu, 4 November</p><p>WIB</p>
-            <ul>Buka - tutup pukul 16.000</ul>
-            <p>Sabtu 08.00 12.00 - Minggu dan hari libur tutup</p>
+            <p id="tanggal">Rabu, 4 November 2026</p>
+            <h2><span id="jam">10.24</span> WIB</h2>
+            <p id="status-buka">Buka · tutup pukul 16.00</p>
+            <p>Sabtu 08.00-12.00 · Minggu dan hari libur tutup</p>
         </div>
 
         <div class="content-section-video">
             <h4>Video Profil</h4>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/skiKX1aosSw?si=I0WE0C_mK7fir-rp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/skiKX1aosSw?si=I0WE0C_mK7fir-rp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+            <p><b>Tur keliling Perpustakaan Memora</b></p>
+            <p>YouTube · Memora Library</p>
         </div>
+
+        <div class="content-section-greeting">
+            <h4>Sambutan kepala perpustakaan</h4>
+            <div class="content-section-greeting-profile">
+                <span>SR</span>
+                <div>
+                    <p><b>Dra. Sri Rahayu, M.Hum.</b></p>
+                    <p>Kepala Perpustakaan Memora</p>
+                </div>
+            </div>
+            <p>"Perpustakaan adalah tempat bertemu ide. Kami ingin setiap mahasiswa menemukan bacaannya, di kampus maupun dari rumah."</p>
+            <a href="about.html">Baca sambutan -></a>
+        </div>
+
+        <div class="content-section-agenda">
+            <h4>Agenda terdekat</h4>
+            <div class="content-section-agenda-sub">
+                <p class="agenda-date">Kam, 6 Nov · 09.00</p>
+                <p class="agenda-title">Pameran kartu katalog lama</p>
+                <p class="agenda-place">Lobi Lt. 1</p>
+            </div>
+            <div class="content-section-agenda-sub">
+                <p class="agenda-date">Sel, 11 Nov · 13.00</p>
+                <p class="agenda-title">Kelas Mendeley untuk skripsi</p>
+                <p class="agenda-place">Lab Literasi Lt. 3</p>
+            </div>
+            <div class="content-section-agenda-sub">
+                <p class="agenda-date">Jum, 21 Nov · 14.00</p>
+                <p class="agenda-title">Diskusi buku bulanan</p>
+                <p class="agenda-place">Ruang Diskusi 2</p>
+            </div>
+        </div>
+
+        <div class="content-section-gallery">
+            <h4>Galeri terbaru</h4>
+            <div class="content-section-gallery-sub">
+                <img src="assets/png/galeri-1.jpg" alt="Gedung perpustakaan tampak depan" loading="lazy">
+                <img src="assets/png/galeri-2.jpg" alt="Ruang baca dengan meja dan kursi" loading="lazy">
+                <img src="assets/png/galeri-3.jpg" alt="Teras gedung perpustakaan" loading="lazy">
+                <img src="assets/png/galeri-4.jpg" alt="Ruang diskusi perpustakaan" loading="lazy">
+                <img src="assets/png/galeri-5.jpg" alt="Area baca di lantai perpustakaan" loading="lazy">
+                <img src="assets/png/galeri-6.jpg" alt="Koleksi buku lama di rak" loading="lazy">
+            </div>
+            <a href="gallery.html">Lihat galeri -></a>
+        </div>
+    </aside>
+</div>
+
+<div class="explore">
+    <h2>Jelajahi Memora</h2>
+    <div class="explore-grid">
+        <a href="ruang-baca-3d.html" class="explore-card">
+            <img src="assets/png/jelajah-ruang-baca-3d.jpg" alt="Rak buku perpustakaan" loading="lazy">
+            <div class="explore-card-text">
+                <h3>Ruang Baca 3D -></h3>
+                <p>Telusuri rak per subjek dari browser</p>
+            </div>
+        </a>
+        <a href="news.html" class="explore-card explore-card-yellow">
+            <div class="explore-card-text">
+                <h3>Panduan sitasi & daftar pustaka -></h3>
+                <p>APA, IEEE, dan Chicago dengan contoh</p>
+            </div>
+        </a>
+        <a href="catalog.html" class="explore-card">
+            <img src="assets/png/jelajah-koleksi-langka.jpg" alt="Lemari katalog kartu dari kayu" loading="lazy">
+            <div class="explore-card-text">
+                <h3>Koleksi langka & arsip -></h3>
+                <p>Naskah lama dan terbitan kampus</p>
+            </div>
+        </a>
+        <a href="news.html" class="explore-card explore-card-navy">
+            <div class="explore-card-text">
+                <h3>Kelas literasi informasi -></h3>
+                <p>Jadwal kelas untuk mahasiswa dan dosen</p>
+            </div>
+        </a>
+        <a href="gallery.html" class="explore-card">
+            <img src="assets/png/jelajah-galeri-kegiatan.jpg" alt="Meja layanan di ruang baca" loading="lazy">
+            <div class="explore-card-text">
+                <h3>Galeri kegiatan -></h3>
+                <p>Foto acara dan ruang perpustakaan</p>
+            </div>
+        </a>
+        <a href="catalog.html" class="explore-card">
+            <img src="assets/png/jelajah-repositori.jpg" alt="Deretan rak buku perpustakaan kampus" loading="lazy">
+            <div class="explore-card-text">
+                <h3>Repositori skripsi & tesis -></h3>
+                <p>Karya akhir mahasiswa dalam teks lengkap</p>
+            </div>
+        </a>
     </div>
 </div>
+
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-sub">
+            <img src="design/logo/memora-logo-putih.svg" alt="Logo Memora">
+            <p>Gedung Perpustakaan Lt. 2, Kampus Utama<br>(021) 555-0123 · info@memora.ac.id</p>
+        </div>
+        <div class="footer-sub">
+            <h4>Layanan</h4>
+            <a href="catalog.html">Katalog online</a>
+            <a href="catalog.html">Peminjaman & perpanjangan</a>
+            <a href="contact.html">Ruang diskusi</a>
+            <a href="contact.html">Bebas pustaka</a>
+        </div>
+        <div class="footer-sub">
+            <h4>Tentang</h4>
+            <a href="about.html#profil">Profil</a>
+            <a href="about.html#visi-misi">Visi dan misi</a>
+            <a href="about.html#struktur">Struktur organisasi</a>
+            <a href="gallery.html">Galeri</a>
+            <a href="contact.html">Kontak</a>
+        </div>
+        <div class="footer-sub">
+            <h4>Tautan resmi</h4>
+            <a href="https://www.perpusnas.go.id">Perpustakaan Nasional RI</a>
+            <a href="https://ipusnas.id">iPusnas</a>
+            <a href="https://garuda.kemdiktisaintek.go.id">Garuda</a>
+            <a href="https://onesearch.id">Indonesia OneSearch</a>
+            <a href="index.html">Website kampus</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Perpustakaan Memora · Proyek UTS Pengembangan Web</p>
+        <p>Foto: Wikimedia Commons, StockSnap (CC0, CC BY, CC BY-SA) · <a href="assets/png/KREDIT-FOTO.md">Kredit foto</a></p>
+        <div class="footer-bottom-social">
+            <a href="https://www.instagram.com">Instagram</a>
+            <a href="https://www.youtube.com">YouTube</a>
+            <a href="https://www.tiktok.com">TikTok</a>
+        </div>
+    </div>
+</footer>
 </body>
+</html>

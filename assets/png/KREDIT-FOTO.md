@@ -27,3 +27,51 @@
 - Sumber: https://commons.wikimedia.org/w/index.php?curid=84098044
 - Lisensi: https://creativecommons.org/licenses/by-sa/4.0
 - Wajib mencantumkan kredit. Jika foto diubah, hasilnya harus dibagikan dengan lisensi yang sama.
+
+## galeri-1.jpg
+"Gedung Juang Perpustakaan Kota Serang - 01" oleh Pijri Paijar, CC BY-SA 4.0, via Wikimedia Commons. Di-crop dan diperkecil.
+- Sumber: https://commons.wikimedia.org/wiki/File:Gedung_Juang_Perpustakaan_Kota_Serang_-_01.jpg
+- Lisensi: https://creativecommons.org/licenses/by-sa/4.0
+
+## galeri-2.jpg
+"Perpustakaan Pusat Universitas Islam Negeri Malang 2023 - 02" oleh Wikimedia Indonesia, CC BY-SA 4.0, via Wikimedia Commons. Di-crop dan diperkecil.
+- Sumber: https://commons.wikimedia.org/wiki/File:Perpustakaan_Pusat_Universitas_Islam_Negeri_Malang_2023_-_02.jpg
+- Lisensi: https://creativecommons.org/licenses/by-sa/4.0
+
+## galeri-3.jpg
+"Gedung Juang Perpustakaan Kota Serang - 20" oleh Pijri Paijar, CC BY-SA 4.0, via Wikimedia Commons. Di-crop dan diperkecil.
+- Sumber: https://commons.wikimedia.org/wiki/File:Gedung_Juang_Perpustakaan_Kota_Serang_-_20.jpg
+- Lisensi: https://creativecommons.org/licenses/by-sa/4.0
+
+## galeri-4.jpg
+"Perpustakaan Pusat Universitas Islam Negeri Malang 2023 - 04" oleh Wikimedia Indonesia, CC BY-SA 4.0, via Wikimedia Commons. Di-crop dan diperkecil.
+- Sumber: https://commons.wikimedia.org/wiki/File:Perpustakaan_Pusat_Universitas_Islam_Negeri_Malang_2023_-_04.jpg
+- Lisensi: https://creativecommons.org/licenses/by-sa/4.0
+
+## galeri-5.jpg
+"Perpustakaan Pusat Universitas Islam Negeri Malang 2023 - 06" oleh Wikimedia Indonesia, CC BY-SA 4.0, via Wikimedia Commons. Di-crop dan diperkecil.
+- Sumber: https://commons.wikimedia.org/wiki/File:Perpustakaan_Pusat_Universitas_Islam_Negeri_Malang_2023_-_06.jpg
+- Lisensi: https://creativecommons.org/licenses/by-sa/4.0
+
+## galeri-6.jpg
+"Koleksi Perpustakaan PPKS" oleh Harditaher, CC BY-SA 4.0, via Wikimedia Commons. Di-crop dan diperkecil.
+- Sumber: https://commons.wikimedia.org/wiki/File:Koleksi_Perpustakaan_PPKS.jpg
+- Lisensi: https://creativecommons.org/licenses/by-sa/4.0
+
+## jelajah-galeri-kegiatan.jpg
+"Library desk, Reading Room, Mitchell Building" oleh Pix Magazine Photographer, Public domain, via Wikimedia Commons. Di-crop dan diperkecil.
+- Sumber: https://commons.wikimedia.org/wiki/File:Library_desk,_Reading_Room,_Mitchell_Building.jpg
+
+## jelajah-koleksi-langka.jpg
+"Wooden Card Catalog Furniture" oleh MarkBuckawicki, CC0, via Wikimedia Commons. Di-crop dan diperkecil.
+- Sumber: https://commons.wikimedia.org/wiki/File:Wooden_Card_Catalog_Furniture.jpg
+- Lisensi: http://creativecommons.org/publicdomain/zero/1.0/deed.en
+
+## jelajah-repositori.jpg
+"Bookshelves, campus library, West Bengal National University of Juridical Sciences" oleh Legaleagle86, Public domain, via Wikimedia Commons. Di-crop dan diperkecil.
+- Sumber: https://commons.wikimedia.org/wiki/File:Bookshelves,_campus_library,_West_Bengal_National_University_of_Juridical_Sciences.jpg
+
+## jelajah-ruang-baca-3d.jpg
+"Bookshelves in Faculty of Arts Library, Chulalongkorn University" oleh Geonuch, CC BY-SA 4.0, via Wikimedia Commons. Di-crop dan diperkecil.
+- Sumber: https://commons.wikimedia.org/wiki/File:Bookshelves_in_Faculty_of_Arts_Library,_Chulalongkorn_University.jpg
+- Lisensi: https://creativecommons.org/licenses/by-sa/4.0
