@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="design/logo/memora-ikon.svg">
+<title>Katalog Memora</title>
+</head>
+<body>
+<div class="announce-bar">
+    <p><b>Jumat, 7 November</b> layanan tutup pukul 12.00 karena rapat staf. Buku tetap bisa dikembalikan lewat kotak di depan pintu masuk.</p>
+    <button>x</button>
+</div>
+
+<div class="info-bar">
+    <p>Kampus Utama · Gedung Perpustakaan Lt. 2 · (021) 555-0123</p>
+    <div class="info-bar-sub">
+        <a href="#">Aksesibilitas</a>
+        <a href="login.html">Masuk</a>
+        <div class="info-bar-mode">
+            <button class="info-bar-mode-active">2D</button>
+            <button>3D</button>
+        </div>
+    </div>
+</div>
+
+<header class="top-bar">
+    <div class="top-bar-sub">
+        <img src="design/logo/memora-logo.svg" alt="Logo Memora">
+    </div>
+
+    <nav class="top-bar-sub">
+        <a href="index.html">Home</a>
+        <div class="top-bar-dropdown">
+            <a href="about.html">About</a>
+            <div class="top-bar-dropdown-sub">
+                <a href="about.html#profil">Profil</a>
+                <a href="about.html#visi-misi">Visi & Misi</a>
+                <a href="about.html#tujuan">Tujuan</a>
+                <a href="about.html#struktur">Struktur Organisasi</a>
+            </div>
+        </div>
+        <a href="catalog.html" class="top-bar-active">Catalog</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="registration.html">Registration</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="top-bar-sub">
+        <a href="contact.html" class="top-bar-ask">Ask Librarian</a>
+    </div>
+</header>
+
+<div class="catalog-head">
+    <p class="page-head-breadcrumb"><a href="index.html">Beranda</a> / <span>Katalog</span></p>
+    <div class="hero-flex-left-bar">
+        <a href="catalog.html" class="hero-flex-left-bar-active">Catalog</a>
+        <a href="catalog.html">E-book</a>
+        <a href="catalog.html">Journal</a>
+        <a href="catalog.html">Repository</a>
+        <a href="catalog.html">Other</a>
+    </div>
+
+    <form class="hero-flex-left-search catalog-search" action="catalog.html">
+        <input type="text" placeholder="Judul, pengarang, ISBN, atau subjek" name="search" value="sejarah indonesia">
+        <button type="submit">Cari</button>
+    </form>
+
+    <p class="catalog-try">Coba juga:
+        <a href="catalog.html?search=pemrograman web">pemrograman web</a>,
+        <a href="catalog.html?search=novel">novel</a>,
+        <a href="catalog.html?search=metodologi penelitian">metodologi penelitian</a> ·
+        <a href="catalog.html">Pencarian lanjutan</a>
+    </p>
+</div>
+
+<main class="catalog">
+    <aside class="catalog-filter">
+        <div class="catalog-filter-head">
+            <h3>Saring hasil</h3>
+            <a href="catalog.html">Hapus semua</a>
+        </div>
+
+        <div class="catalog-filter-group">
+            <h4>Jenis</h4>
+            <label><input type="checkbox" name="jenis" value="buku"> Buku <span>3</span></label>
+            <label><input type="checkbox" name="jenis" value="ebook"> E-book <span>1</span></label>
+            <label><input type="checkbox" name="jenis" value="referensi"> Referensi <span>1</span></label>
+            <label><input type="checkbox" name="jenis" value="skripsi"> Skripsi & tesis <span>1</span></label>
+        </div>
+
+        <div class="catalog-filter-group">
+            <h4>Ketersediaan</h4>
+            <label><input type="checkbox" name="tersedia"> Tersedia sekarang <span>3</span></label>
+            <label><input type="checkbox" name="online"> Bisa dibaca online <span>2</span></label>
+        </div>
+
+        <div class="catalog-filter-group">
+            <h4>Subjek</h4>
+            <label><input type="checkbox" name="subjek" value="sejarah"> Sejarah Indonesia <span>5</span></label>
+            <label><input type="checkbox" name="subjek" value="sastra"> Sastra Indonesia <span>1</span></label>
+        </div>
+
+        <div class="catalog-filter-group">
+            <h4>Tahun terbit</h4>
+            <div class="catalog-filter-year">
+                <input type="number" name="dari" value="1990" aria-label="Tahun dari">
+                <p>–</p>
+                <input type="number" name="sampai" value="2026" aria-label="Tahun sampai">
+            </div>
+        </div>
+
+        <div class="catalog-filter-group">
+            <h4>Bahasa</h4>
+            <label><input type="checkbox" name="bahasa" value="id" checked> Indonesia <span>6</span></label>
+            <label><input type="checkbox" name="bahasa" value="en"> Inggris <span>0</span></label>
+        </div>
+    </aside>
+
+    <div class="catalog-result">
+        <div class="catalog-result-head">
+            <p><b>6 hasil</b> untuk "sejarah indonesia" <span class="badge-blue">Bahasa Indonesia ×</span></p>
+            <select class="gallery-sort" aria-label="Urutkan hasil">
+                <option>Paling relevan</option>
+                <option>Terbaru</option>
+                <option>Judul A–Z</option>
+            </select>
+        </div>
+
+        <div class="catalog-book">
+            <img src="assets/png/buku-sejarah-indonesia-modern.png" alt="Sampul buku Sejarah Indonesia Modern">
+            <div class="catalog-book-info">
+                <p class="catalog-book-type">Buku</p>
+                <h3>Sejarah Indonesia Modern 1200–2008</h3>
+                <p class="catalog-book-author">M. C. Ricklefs</p>
+                <p class="catalog-book-detail">Serambi, 2008 · 864 hlm. · <code>959.8 RIC s</code></p>
+                <p><span class="badge-green">Tersedia 2 dari 3</span> Rak 3B</p>
+            </div>
+            <div class="catalog-book-action">
+                <a href="login.html" class="button-navy">Ajukan pinjam</a>
+                <a href="catalog.html">Detail →</a>
+            </div>
+        </div>
+
+        <div class="catalog-book">
+            <img src="assets/png/buku-nusantara.png" alt="Sampul buku Nusantara">
+            <div class="catalog-book-info">
+                <p class="catalog-book-type">Buku</p>
+                <h3>Nusantara: Sejarah Indonesia</h3>
+                <p class="catalog-book-author">Bernard H. M. Vlekke</p>
+                <p class="catalog-book-detail">KPG, 2008 · 560 hlm. · <code>959.8 VLE n</code></p>
+                <p><span class="badge-red">Dipinjam s.d. 12 Nov</span> 1 antrean</p>
+            </div>
+            <div class="catalog-book-action">
+                <a href="login.html" class="button-outline">Antre</a>
+                <a href="catalog.html">Detail →</a>
+            </div>
+        </div>
+
+        <div class="catalog-book">
+            <img src="assets/png/buku-bumi-manusia.png" alt="Sampul buku Bumi Manusia">
+            <div class="catalog-book-info">
+                <p class="catalog-book-type">Buku · Novel</p>
+                <h3>Bumi Manusia</h3>
+                <p class="catalog-book-author">Pramoedya Ananta Toer</p>
+                <p class="catalog-book-detail">Lentera Dipantara, 2005 · 535 hlm. · <code>899.221 TOE b</code></p>
+                <p><span class="badge-green">Tersedia</span> Rak 2B</p>
+            </div>
+            <div class="catalog-book-action">
+                <a href="login.html" class="button-navy">Ajukan pinjam</a>
+                <a href="catalog.html">Detail →</a>
+            </div>
+        </div>
+
+        <div class="catalog-book">
+            <img src="assets/png/buku-indonesia-dalam-arus-sejarah.png" alt="Sampul buku Indonesia dalam Arus Sejarah">
+            <div class="catalog-book-info">
+                <p class="catalog-book-type">Referensi</p>
+                <h3>Indonesia dalam Arus Sejarah (Jilid 1–9)</h3>
+                <p class="catalog-book-author">Taufik Abdullah (ed.)</p>
+                <p class="catalog-book-detail">Ichtiar Baru van Hoeve, 2012 · <code>R 959.8 IND</code></p>
+                <p><span class="badge-yellow">Baca di tempat</span> Koleksi Referensi</p>
+            </div>
+            <div class="catalog-book-action">
+                <a href="catalog.html">Detail →</a>
+            </div>
+        </div>
+
+        <div class="catalog-book">
+            <img src="assets/png/buku-sejarah-pergerakan-nasional.png" alt="Sampul buku Sejarah Pergerakan Nasional">
+            <div class="catalog-book-info">
+                <p class="catalog-book-type">E-book</p>
+                <h3>Sejarah Pergerakan Nasional</h3>
+                <p class="catalog-book-author">Sartono Kartodirdjo</p>
+                <p class="catalog-book-detail">Gramedia, 1990 · PDF · <code>E-959.8 KAR</code></p>
+                <p><span class="badge-blue">Akses online</span> Khusus anggota</p>
+            </div>
+            <div class="catalog-book-action">
+                <a href="login.html" class="button-navy">Baca online</a>
+                <a href="catalog.html">Detail →</a>
+            </div>
+        </div>
+
+        <div class="catalog-book">
+            <img src="assets/png/buku-skripsi-literasi-sejarah.png" alt="Sampul skripsi">
+            <div class="catalog-book-info">
+                <p class="catalog-book-type">Repositori · Skripsi</p>
+                <h3>Peran Perpustakaan Kampus dalam Literasi Sejarah Mahasiswa</h3>
+                <p class="catalog-book-author">Rina Putri Lestari</p>
+                <p class="catalog-book-detail">S1 Ilmu Sejarah, 2025 · 112 hlm. · <code>SKR-2025-0412</code></p>
+                <p><span class="badge-blue">Teks lengkap</span> PDF 2,4 MB</p>
+            </div>
+            <div class="catalog-book-action">
+                <a href="login.html" class="button-navy">Unduh PDF</a>
+                <a href="catalog.html">Detail →</a>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <a href="#">‹</a>
+            <a href="catalog.html" class="pagination-active">1</a>
+            <a href="#">›</a>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-sub">
+            <img src="design/logo/memora-logo-putih.svg" alt="Logo Memora">
+            <p>Gedung Perpustakaan Lt. 2, Kampus Utama<br>(021) 555-0123 · info@memora.ac.id</p>
+        </div>
+        <div class="footer-sub">
+            <h4>Layanan</h4>
+            <a href="catalog.html">Katalog online</a>
+            <a href="catalog.html">Peminjaman & perpanjangan</a>
+            <a href="contact.html">Ruang diskusi</a>
+            <a href="contact.html">Bebas pustaka</a>
+        </div>
+        <div class="footer-sub">
+            <h4>Tentang</h4>
+            <a href="about.html#profil">Profil</a>
+            <a href="about.html#visi-misi">Visi dan misi</a>
+            <a href="about.html#struktur">Struktur organisasi</a>
+            <a href="gallery.html">Galeri</a>
+            <a href="contact.html">Kontak</a>
+        </div>
+        <div class="footer-sub">
+            <h4>Tautan resmi</h4>
+            <a href="https://www.perpusnas.go.id">Perpustakaan Nasional RI</a>
+            <a href="https://ipusnas.id">iPusnas</a>
+            <a href="https://garuda.kemdiktisaintek.go.id">Garuda</a>
+            <a href="https://onesearch.id">Indonesia OneSearch</a>
+            <a href="index.html">Website kampus</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Perpustakaan Memora · Proyek UTS Pengembangan Web</p>
+        <p>Foto: Wikimedia Commons, StockSnap (CC0, CC BY, CC BY-SA) · <a href="assets/png/KREDIT-FOTO.md">Kredit foto</a></p>
+        <div class="footer-bottom-social">
+            <a href="https://www.instagram.com">Instagram</a>
+            <a href="https://www.youtube.com">YouTube</a>
+            <a href="https://www.tiktok.com">TikTok</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

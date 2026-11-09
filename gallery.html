@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="design/logo/memora-ikon.svg">
+<title>Galeri Memora</title>
+</head>
+<body>
+<div class="announce-bar">
+    <p><b>Jumat, 7 November</b> layanan tutup pukul 12.00 karena rapat staf. Buku tetap bisa dikembalikan lewat kotak di depan pintu masuk.</p>
+    <button>x</button>
+</div>
+
+<div class="info-bar">
+    <p>Kampus Utama · Gedung Perpustakaan Lt. 2 · (021) 555-0123</p>
+    <div class="info-bar-sub">
+        <a href="#">Aksesibilitas</a>
+        <a href="login.html">Masuk</a>
+        <div class="info-bar-mode">
+            <button class="info-bar-mode-active">2D</button>
+            <button>3D</button>
+        </div>
+    </div>
+</div>
+
+<header class="top-bar">
+    <div class="top-bar-sub">
+        <img src="design/logo/memora-logo.svg" alt="Logo Memora">
+    </div>
+
+    <nav class="top-bar-sub">
+        <a href="index.html">Home</a>
+        <div class="top-bar-dropdown">
+            <a href="about.html">About</a>
+            <div class="top-bar-dropdown-sub">
+                <a href="about.html#profil">Profil</a>
+                <a href="about.html#visi-misi">Visi & Misi</a>
+                <a href="about.html#tujuan">Tujuan</a>
+                <a href="about.html#struktur">Struktur Organisasi</a>
+            </div>
+        </div>
+        <a href="catalog.html">Catalog</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html" class="top-bar-active">Gallery</a>
+        <a href="registration.html">Registration</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="top-bar-sub">
+        <a href="contact.html" class="top-bar-ask">Ask Librarian</a>
+    </div>
+</header>
+
+<div class="page-head">
+    <p class="page-head-breadcrumb"><a href="index.html">Beranda</a> / <span>Galeri</span></p>
+    <h1>Galeri</h1>
+    <p>Foto kegiatan, ruang, dan koleksi Memora. Klik foto untuk melihat ukuran penuh dan keterangannya.</p>
+</div>
+
+<main class="gallery">
+    <div class="gallery-toolbar">
+        <div class="gallery-filter">
+            <button class="gallery-filter-active">Semua · 11</button>
+            <button>Kegiatan · 2</button>
+            <button>Pelatihan · 1</button>
+            <button>Kunjungan · 2</button>
+            <button>Ruang & fasilitas · 3</button>
+            <button>Koleksi · 3</button>
+        </div>
+        <select class="gallery-sort">
+            <option>Terbaru dahulu</option>
+            <option>Terlama dahulu</option>
+        </select>
+    </div>
+
+    <div class="gallery-grid">
+        <a href="assets/png/berita-kunjungan-studi.jpg" class="gallery-item gallery-item-big">
+            <img src="assets/png/berita-kunjungan-studi.jpg" alt="Gedung perpustakaan bersejarah dengan atap genteng" loading="lazy">
+            <div class="gallery-item-text">
+                <h4>Kunjungan studi ke perpustakaan bersejarah</h4>
+                <p>Kunjungan · 21 Okt 2026</p>
+            </div>
+        </a>
+        <a href="assets/png/berita-bedah-buku.jpg" class="gallery-item">
+            <img src="assets/png/berita-bedah-buku.jpg" alt="Dua orang tersenyum di balik rak buku" loading="lazy">
+            <div class="gallery-item-text">
+                <h4>Bedah buku Bumi Manusia</h4>
+                <p>Kegiatan · 28 Okt 2026</p>
+            </div>
+        </a>
+        <a href="assets/png/hero-ruang-baca.jpg" class="gallery-item">
+            <img src="assets/png/hero-ruang-baca.jpg" alt="Ruang baca dengan pilar dan rak buku tinggi" loading="lazy">
+            <div class="gallery-item-text">
+                <h4>Ruang baca utama</h4>
+                <p>Ruang & fasilitas</p>
+            </div>
+        </a>
+        <a href="assets/png/galeri-pameran-kartu-katalog.jpg" class="gallery-item">
+            <img src="assets/png/galeri-pameran-kartu-katalog.jpg" alt="Kartu katalog lama di dalam laci" loading="lazy">
+            <div class="gallery-item-text">
+                <h4>Pameran kartu katalog lama</h4>
+                <p>Koleksi · Sep 2026</p>
+            </div>
+        </a>
+        <a href="assets/png/galeri-koleksi-stempel.jpg" class="gallery-item">
+            <img src="assets/png/galeri-koleksi-stempel.jpg" alt="Stempel dan buku lama perpustakaan" loading="lazy">
+            <div class="gallery-item-text">
+                <h4>Koleksi stempel perpustakaan</h4>
+                <p>Koleksi · Agu 2026</p>
+            </div>
+        </a>
+        <a href="assets/png/berita-jam-buka-uts.jpg" class="gallery-item gallery-item-wide">
+            <img src="assets/png/berita-jam-buka-uts.jpg" alt="Papan nama ruang belajar mahasiswa" loading="lazy">
+            <div class="gallery-item-text">
+                <h4>Belajar bersama menjelang UTS</h4>
+                <p>Kegiatan · Okt 2026</p>
+            </div>
+        </a>
+        <a href="assets/png/galeri-studi-banding.jpg" class="gallery-item gallery-item-tall">
+            <img src="assets/png/galeri-studi-banding.jpg" alt="Gedung perpustakaan universitas bertingkat" loading="lazy">
+            <div class="gallery-item-text">
+                <h4>Studi banding ke perpustakaan universitas</h4>
+                <p>Kunjungan · Jul 2026</p>
+            </div>
+        </a>
+        <a href="assets/png/berita-pelatihan-literasi.jpg" class="gallery-item">
+            <img src="assets/png/berita-pelatihan-literasi.jpg" alt="Ruang baca dengan meja dan kursi berwarna" loading="lazy">
+            <div class="gallery-item-text">
+                <h4>Pelatihan literasi informasi</h4>
+                <p>Pelatihan · 12 Okt 2026</p>
+            </div>
+        </a>
+        <a href="assets/png/galeri-area-baca-santai.jpg" class="gallery-item">
+            <img src="assets/png/galeri-area-baca-santai.jpg" alt="Area baca santai dengan meja bundar" loading="lazy">
+            <div class="gallery-item-text">
+                <h4>Area baca santai Lt. 2</h4>
+                <p>Ruang & fasilitas</p>
+            </div>
+        </a>
+        <a href="assets/png/berita-peminjaman-online.jpg" class="gallery-item">
+            <img src="assets/png/berita-peminjaman-online.jpg" alt="Meja sirkulasi perpustakaan" loading="lazy">
+            <div class="gallery-item-text">
+                <h4>Meja sirkulasi baru</h4>
+                <p>Ruang & fasilitas · Okt 2026</p>
+            </div>
+        </a>
+        <a href="assets/png/galeri-rak-referensi.jpg" class="gallery-item">
+            <img src="assets/png/galeri-rak-referensi.jpg" alt="Deretan rak koleksi referensi" loading="lazy">
+            <div class="gallery-item-text">
+                <h4>Rak koleksi referensi</h4>
+                <p>Koleksi</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="gallery-more">
+        <p>Menampilkan 11 foto</p>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-sub">
+            <img src="design/logo/memora-logo-putih.svg" alt="Logo Memora">
+            <p>Gedung Perpustakaan Lt. 2, Kampus Utama<br>(021) 555-0123 · info@memora.ac.id</p>
+        </div>
+        <div class="footer-sub">
+            <h4>Layanan</h4>
+            <a href="catalog.html">Katalog online</a>
+            <a href="catalog.html">Peminjaman & perpanjangan</a>
+            <a href="contact.html">Ruang diskusi</a>
+            <a href="contact.html">Bebas pustaka</a>
+        </div>
+        <div class="footer-sub">
+            <h4>Tentang</h4>
+            <a href="about.html#profil">Profil</a>
+            <a href="about.html#visi-misi">Visi dan misi</a>
+            <a href="about.html#struktur">Struktur organisasi</a>
+            <a href="gallery.html">Galeri</a>
+            <a href="contact.html">Kontak</a>
+        </div>
+        <div class="footer-sub">
+            <h4>Tautan resmi</h4>
+            <a href="https://www.perpusnas.go.id">Perpustakaan Nasional RI</a>
+            <a href="https://ipusnas.id">iPusnas</a>
+            <a href="https://garuda.kemdiktisaintek.go.id">Garuda</a>
+            <a href="https://onesearch.id">Indonesia OneSearch</a>
+            <a href="index.html">Website kampus</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Perpustakaan Memora · Proyek UTS Pengembangan Web</p>
+        <p>Foto: Wikimedia Commons, StockSnap (CC0, CC BY, CC BY-SA) · <a href="assets/png/KREDIT-FOTO.md">Kredit foto</a></p>
+        <div class="footer-bottom-social">
+            <a href="https://www.instagram.com">Instagram</a>
+            <a href="https://www.youtube.com">YouTube</a>
+            <a href="https://www.tiktok.com">TikTok</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

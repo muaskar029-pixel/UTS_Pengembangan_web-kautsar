@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="design/logo/memora-ikon.svg">
+<title>Registrasi Anggota Memora</title>
+</head>
+<body>
+<div class="announce-bar">
+    <p><b>Jumat, 7 November</b> layanan tutup pukul 12.00 karena rapat staf. Buku tetap bisa dikembalikan lewat kotak di depan pintu masuk.</p>
+    <button>x</button>
+</div>
+
+<div class="info-bar">
+    <p>Kampus Utama · Gedung Perpustakaan Lt. 2 · (021) 555-0123</p>
+    <div class="info-bar-sub">
+        <a href="#">Aksesibilitas</a>
+        <a href="login.html">Masuk</a>
+        <div class="info-bar-mode">
+            <button class="info-bar-mode-active">2D</button>
+            <button>3D</button>
+        </div>
+    </div>
+</div>
+
+<header class="top-bar">
+    <div class="top-bar-sub">
+        <img src="design/logo/memora-logo.svg" alt="Logo Memora">
+    </div>
+
+    <nav class="top-bar-sub">
+        <a href="index.html">Home</a>
+        <div class="top-bar-dropdown">
+            <a href="about.html">About</a>
+            <div class="top-bar-dropdown-sub">
+                <a href="about.html#profil">Profil</a>
+                <a href="about.html#visi-misi">Visi & Misi</a>
+                <a href="about.html#tujuan">Tujuan</a>
+                <a href="about.html#struktur">Struktur Organisasi</a>
+            </div>
+        </div>
+        <a href="catalog.html">Catalog</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="registration.html" class="top-bar-active">Registration</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="top-bar-sub">
+        <a href="contact.html" class="top-bar-ask">Ask Librarian</a>
+    </div>
+</header>
+
+<div class="page-head">
+    <p class="page-head-breadcrumb"><a href="index.html">Beranda</a> / <span>Registrasi</span></p>
+    <h1>Daftar Anggota Memora</h1>
+    <p>Gratis untuk mahasiswa, dosen, dan tenaga kependidikan. Akun aktif setelah diverifikasi pustakawan, paling lama 1×24 jam kerja.</p>
+</div>
+
+<main class="page-two-column">
+    <div class="page-two-column-main">
+        <div class="register-step">
+            <div class="register-step-sub register-step-active">
+                <span>1</span>
+                <p>Data diri</p>
+            </div>
+            <div class="register-step-sub register-step-active">
+                <span>2</span>
+                <p>Akun & kartu</p>
+            </div>
+            <div class="register-step-sub">
+                <span>3</span>
+                <p>Verifikasi pustakawan</p>
+            </div>
+        </div>
+
+        <form class="form-card" action="registration.html">
+            <h2>Data diri</h2>
+            <p class="section-desc">Kolom bertanda <span class="form-required">*</span> wajib diisi.</p>
+
+            <div class="form-group">
+                <p class="form-label">Status <span class="form-required">*</span></p>
+                <div class="register-status">
+                    <label>
+                        <input type="radio" name="status" value="mahasiswa" checked>
+                        <b>Mahasiswa</b>
+                        <span>Pinjam 5 buku · 14 hari</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="status" value="dosen">
+                        <b>Dosen</b>
+                        <span>Pinjam 10 buku · 30 hari</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="status" value="tendik">
+                        <b>Tenaga kependidikan</b>
+                        <span>Pinjam 5 buku · 14 hari</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="nama">Nama lengkap <span class="form-required">*</span></label>
+                <input type="text" id="nama" name="nama" placeholder="Sesuai kartu identitas" required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nim">NIM / NIP <span class="form-required">*</span></label>
+                    <input type="text" id="nim" name="nim" placeholder="Contoh: 2302110045" required>
+                </div>
+                <div class="form-group">
+                    <label for="prodi">Program studi / unit <span class="form-required">*</span></label>
+                    <select id="prodi" name="prodi" required>
+                        <option value="">Pilih program studi</option>
+                        <option>S1 Sistem Informasi</option>
+                        <option>S1 Teknik Informatika</option>
+                        <option>S1 Ilmu Sejarah</option>
+                        <option>S1 Sastra Indonesia</option>
+                        <option>S1 Manajemen</option>
+                        <option>Unit / bagian kampus</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Email kampus <span class="form-required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="nama@student.kampus.ac.id" required>
+                    <p class="form-hint">Gunakan email kampus yang berakhiran @student.kampus.ac.id atau @kampus.ac.id</p>
+                </div>
+                <div class="form-group">
+                    <label for="hp">Nomor HP / WhatsApp <span class="form-required">*</span></label>
+                    <input type="tel" id="hp" name="hp" placeholder="0812-xxxx-xxxx" required>
+                </div>
+            </div>
+
+            <h2 class="register-subtitle">Akun & kartu identitas</h2>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="sandi">Kata sandi <span class="form-required">*</span></label>
+                    <input type="password" id="sandi" name="sandi" minlength="8" required>
+                    <p class="form-hint">Min. 8 karakter, campur huruf dan angka</p>
+                </div>
+                <div class="form-group">
+                    <label for="sandi2">Ulangi kata sandi <span class="form-required">*</span></label>
+                    <input type="password" id="sandi2" name="sandi2" minlength="8" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="ktm">Foto KTM / kartu pegawai <span class="form-required">*</span></label>
+                <div class="register-upload">
+                    <p><b>Pilih foto kartu</b> dari perangkat Anda</p>
+                    <input type="file" id="ktm" name="ktm" accept="image/png, image/jpeg" required>
+                    <p class="form-hint">JPG atau PNG, maks. 2 MB. Pastikan nama dan nomor terbaca jelas.</p>
+                </div>
+            </div>
+
+            <label class="form-check register-agree"><input type="checkbox" name="setuju" required> Saya sudah membaca dan menyetujui <b>tata tertib perpustakaan</b>, termasuk ketentuan denda keterlambatan.</label>
+
+            <div class="form-bottom">
+                <a href="index.html" class="button-outline">← Kembali</a>
+                <button type="submit" class="button-navy">Kirim pendaftaran</button>
+            </div>
+        </form>
+    </div>
+
+    <aside class="page-two-column-side">
+        <div class="side-gray">
+            <h3>Keuntungan anggota</h3>
+            <ul class="side-check">
+                <li>Pinjam buku cetak dan ajukan dari katalog online</li>
+                <li>Akses e-book dan jurnal dari luar kampus</li>
+                <li>Pesan ruang diskusi di Lt. 3</li>
+                <li>Unggah dan baca karya akhir di repositori</li>
+                <li>Ikut pelatihan literasi informasi</li>
+            </ul>
+        </div>
+
+        <div class="side-card">
+            <h3>Yang perlu disiapkan</h3>
+            <p class="section-desc">Foto KTM atau kartu pegawai yang masih berlaku, email kampus, dan nomor HP aktif.</p>
+        </div>
+
+        <div class="side-card">
+            <h3>Sudah punya akun?</h3>
+            <p class="section-desc">Masuk untuk melihat pinjaman dan riwayat Anda.</p>
+            <a href="login.html" class="button-outline">Masuk</a>
+        </div>
+    </aside>
+</main>
+
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-sub">
+            <img src="design/logo/memora-logo-putih.svg" alt="Logo Memora">
+            <p>Gedung Perpustakaan Lt. 2, Kampus Utama<br>(021) 555-0123 · info@memora.ac.id</p>
+        </div>
+        <div class="footer-sub">
+            <h4>Layanan</h4>
+            <a href="catalog.html">Katalog online</a>
+            <a href="catalog.html">Peminjaman & perpanjangan</a>
+            <a href="contact.html">Ruang diskusi</a>
+            <a href="contact.html">Bebas pustaka</a>
+        </div>
+        <div class="footer-sub">
+            <h4>Tentang</h4>
+            <a href="about.html#profil">Profil</a>
+            <a href="about.html#visi-misi">Visi dan misi</a>
+            <a href="about.html#struktur">Struktur organisasi</a>
+            <a href="gallery.html">Galeri</a>
+            <a href="contact.html">Kontak</a>
+        </div>
+        <div class="footer-sub">
+            <h4>Tautan resmi</h4>
+            <a href="https://www.perpusnas.go.id">Perpustakaan Nasional RI</a>
+            <a href="https://ipusnas.id">iPusnas</a>
+            <a href="https://garuda.kemdiktisaintek.go.id">Garuda</a>
+            <a href="https://onesearch.id">Indonesia OneSearch</a>
+            <a href="index.html">Website kampus</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Perpustakaan Memora · Proyek UTS Pengembangan Web</p>
+        <p>Foto: Wikimedia Commons, StockSnap (CC0, CC BY, CC BY-SA) · <a href="assets/png/KREDIT-FOTO.md">Kredit foto</a></p>
+        <div class="footer-bottom-social">
+            <a href="https://www.instagram.com">Instagram</a>
+            <a href="https://www.youtube.com">YouTube</a>
+            <a href="https://www.tiktok.com">TikTok</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

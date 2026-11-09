@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="design/logo/memora-ikon.svg">
+<title>Kontak Memora</title>
+</head>
+<body>
+<div class="announce-bar">
+    <p><b>Jumat, 7 November</b> layanan tutup pukul 12.00 karena rapat staf. Buku tetap bisa dikembalikan lewat kotak di depan pintu masuk.</p>
+    <button>x</button>
+</div>
+
+<div class="info-bar">
+    <p>Kampus Utama · Gedung Perpustakaan Lt. 2 · (021) 555-0123</p>
+    <div class="info-bar-sub">
+        <a href="#">Aksesibilitas</a>
+        <a href="login.html">Masuk</a>
+        <div class="info-bar-mode">
+            <button class="info-bar-mode-active">2D</button>
+            <button>3D</button>
+        </div>
+    </div>
+</div>
+
+<header class="top-bar">
+    <div class="top-bar-sub">
+        <img src="design/logo/memora-logo.svg" alt="Logo Memora">
+    </div>
+
+    <nav class="top-bar-sub">
+        <a href="index.html">Home</a>
+        <div class="top-bar-dropdown">
+            <a href="about.html">About</a>
+            <div class="top-bar-dropdown-sub">
+                <a href="about.html#profil">Profil</a>
+                <a href="about.html#visi-misi">Visi & Misi</a>
+                <a href="about.html#tujuan">Tujuan</a>
+                <a href="about.html#struktur">Struktur Organisasi</a>
+            </div>
+        </div>
+        <a href="catalog.html">Catalog</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="registration.html">Registration</a>
+        <a href="contact.html" class="top-bar-active">Contact</a>
+    </nav>
+
+    <div class="top-bar-sub">
+        <a href="contact.html" class="top-bar-ask">Ask Librarian</a>
+    </div>
+</header>
+
+<div class="page-head">
+    <p class="page-head-breadcrumb"><a href="index.html">Beranda</a> / <span>Kontak</span></p>
+    <h1>Kontak & Tanya Pustakawan</h1>
+    <p>Tanyakan koleksi, peminjaman, ruang diskusi, atau bebas pustaka. Pustakawan membalas dalam satu hari kerja.</p>
+</div>
+
+<main class="page-two-column">
+    <div class="page-two-column-main">
+        <form class="form-card" action="contact.html">
+            <h2>Kirim pertanyaan</h2>
+            <p class="section-desc">Kolom bertanda <span class="form-required">*</span> wajib diisi.</p>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nama">Nama lengkap <span class="form-required">*</span></label>
+                    <input type="text" id="nama" name="nama" placeholder="Nama lengkap" required>
+                </div>
+                <div class="form-group">
+                    <label for="nim">NIM / NIP</label>
+                    <input type="text" id="nim" name="nim" placeholder="Contoh: 2302110045">
+                    <p class="form-hint">Isi jika Anda anggota, agar kami bisa cek pinjaman Anda.</p>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Email <span class="form-required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="nama@student.kampus.ac.id" required>
+                </div>
+                <div class="form-group">
+                    <label for="hp">Nomor HP</label>
+                    <input type="tel" id="hp" name="hp" placeholder="Opsional, untuk dihubungi balik">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="institusi">Institusi <span class="form-required">*</span></label>
+                <input type="text" id="institusi" name="institusi" placeholder="Contoh: Fakultas Ilmu Komputer, Universitas ..." required>
+            </div>
+
+            <div class="form-group">
+                <p class="form-label">Topik <span class="form-required">*</span></p>
+                <div class="form-chip">
+                    <label><input type="radio" name="topik" value="peminjaman" checked> Peminjaman</label>
+                    <label><input type="radio" name="topik" value="ruang-diskusi"> Ruang diskusi</label>
+                    <label><input type="radio" name="topik" value="usulan-buku"> Usulan buku</label>
+                    <label><input type="radio" name="topik" value="bebas-pustaka"> Bebas pustaka</label>
+                    <label><input type="radio" name="topik" value="cek-plagiasi"> Cek plagiasi</label>
+                    <label><input type="radio" name="topik" value="lainnya"> Lainnya</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="pesan">Pesan <span class="form-required">*</span></label>
+                <textarea id="pesan" name="pesan" rows="6" maxlength="1000" placeholder="Tulis pertanyaan Anda" required></textarea>
+                <p class="form-hint">Maks. 1.000 karakter</p>
+            </div>
+
+            <div class="form-bottom">
+                <label class="form-check"><input type="checkbox" name="salinan" checked> Kirim salinan pesan ke email saya</label>
+                <button type="submit" class="button-navy">Kirim pertanyaan →</button>
+            </div>
+        </form>
+    </div>
+
+    <aside class="page-two-column-side">
+        <div class="side-navy">
+            <h3>Butuh jawaban cepat?</h3>
+            <p>Chat pustakawan saat jam layanan, Senin–Jumat 08.00–16.00.</p>
+            <a href="https://wa.me/6281234567890" class="button-yellow">Chat WhatsApp</a>
+        </div>
+
+        <div class="side-card">
+            <div class="side-card-row">
+                <p><b>Telepon</b></p>
+                <p>(021) 555-0123</p>
+            </div>
+            <div class="side-card-row">
+                <p><b>Email</b></p>
+                <p>info@memora.ac.id</p>
+            </div>
+            <div class="side-card-row">
+                <p><b>WhatsApp</b></p>
+                <p>0812-3456-7890</p>
+            </div>
+            <div class="side-card-row">
+                <p><b>Alamat</b></p>
+                <p>Gedung Perpustakaan Lt. 2, Kampus Utama</p>
+            </div>
+            <div class="side-card-row">
+                <p><b>Sosial media</b></p>
+                <p><a href="https://www.instagram.com">Instagram</a> · <a href="https://www.youtube.com">YouTube</a> · <a href="https://www.tiktok.com">TikTok</a></p>
+            </div>
+        </div>
+
+        <div class="side-card">
+            <h3>Status layanan hari ini</h3>
+            <p class="side-card-date">Rabu, 4 November 2026</p>
+            <div class="side-card-row">
+                <p>Meja sirkulasi</p>
+                <p><span class="badge-green">Buka · s.d. 15.30</span></p>
+            </div>
+            <div class="side-card-row">
+                <p>Ruang diskusi Lt. 3</p>
+                <p><span class="badge-yellow">2 dari 6 kosong</span></p>
+            </div>
+            <div class="side-card-row">
+                <p>Chat pustakawan</p>
+                <p><span class="badge-green">Online</span></p>
+            </div>
+        </div>
+    </aside>
+</main>
+
+<section class="faq">
+    <div class="faq-left">
+        <p class="section-label">FAQ</p>
+        <h2>Pertanyaan yang sering diajukan</h2>
+        <p class="section-desc">Tidak menemukan jawabannya? Kirim pertanyaan lewat formulir di atas.</p>
+    </div>
+    <div class="faq-right">
+        <details open>
+            <summary>Berapa lama dan berapa banyak buku yang bisa saya pinjam?</summary>
+            <p>Mahasiswa dapat meminjam hingga 5 buku selama 14 hari dan memperpanjang satu kali secara online. Dosen dapat meminjam hingga 10 buku selama 30 hari.</p>
+        </details>
+        <details>
+            <summary>Bagaimana cara memesan ruang diskusi?</summary>
+            <p>Pilih topik "Ruang diskusi" di formulir di atas, lalu tulis tanggal, jam, dan jumlah orang. Pustakawan akan membalas lewat email.</p>
+        </details>
+        <details>
+            <summary>Berapa denda jika terlambat mengembalikan buku?</summary>
+            <p>Denda Rp 1.000 per buku per hari. Denda dibayar di meja sirkulasi, dan selama belum lunas anggota tidak bisa meminjam.</p>
+        </details>
+        <details>
+            <summary>Bagaimana mengurus surat bebas pustaka?</summary>
+            <p>Kembalikan semua pinjaman dan lunasi denda, lalu ajukan lewat formulir dengan topik "Bebas pustaka". Surat siap dalam satu hari kerja.</p>
+        </details>
+        <details>
+            <summary>Apakah alumni bisa menjadi anggota?</summary>
+            <p>Bisa. Daftar di meja sirkulasi dengan menunjukkan kartu alumni. Alumni dapat meminjam 2 buku selama 14 hari.</p>
+        </details>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-sub">
+            <img src="design/logo/memora-logo-putih.svg" alt="Logo Memora">
+            <p>Gedung Perpustakaan Lt. 2, Kampus Utama<br>(021) 555-0123 · info@memora.ac.id</p>
+        </div>
+        <div class="footer-sub">
+            <h4>Layanan</h4>
+            <a href="catalog.html">Katalog online</a>
+            <a href="catalog.html">Peminjaman & perpanjangan</a>
+            <a href="contact.html">Ruang diskusi</a>
+            <a href="contact.html">Bebas pustaka</a>
+        </div>
+        <div class="footer-sub">
+            <h4>Tentang</h4>
+            <a href="about.html#profil">Profil</a>
+            <a href="about.html#visi-misi">Visi dan misi</a>
+            <a href="about.html#struktur">Struktur organisasi</a>
+            <a href="gallery.html">Galeri</a>
+            <a href="contact.html">Kontak</a>
+        </div>
+        <div class="footer-sub">
+            <h4>Tautan resmi</h4>
+            <a href="https://www.perpusnas.go.id">Perpustakaan Nasional RI</a>
+            <a href="https://ipusnas.id">iPusnas</a>
+            <a href="https://garuda.kemdiktisaintek.go.id">Garuda</a>
+            <a href="https://onesearch.id">Indonesia OneSearch</a>
+            <a href="index.html">Website kampus</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Perpustakaan Memora · Proyek UTS Pengembangan Web</p>
+        <p>Foto: Wikimedia Commons, StockSnap (CC0, CC BY, CC BY-SA) · <a href="assets/png/KREDIT-FOTO.md">Kredit foto</a></p>
+        <div class="footer-bottom-social">
+            <a href="https://www.instagram.com">Instagram</a>
+            <a href="https://www.youtube.com">YouTube</a>
+            <a href="https://www.tiktok.com">TikTok</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
