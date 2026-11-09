@@ -1,6 +1,7 @@
 body {
     background-color: rgb(243, 241, 227);
     margin: 0px;
+    box-sizing: border-box;
 }
 
 .top-bar {
@@ -88,10 +89,30 @@ body {
     padding: 10px;
 }
 
+.content {
+    display: flex;
+    flex-direction: row;
+    max-width: 1280px;   /* lebar maksimal isi */
+    margin: 0 auto;      /* taruh di tengah layar */
+}
+
 .content-section {
+    flex: 2;             /* kolom kiri 2 bagian */
+    min-width: 0;        /* izinkan menyusut lebih kecil dari isinya */
     padding-top: 80px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.content-section + .content-section {
+    flex: 1;             /* kolom kanan (tanggal, video) 1 bagian */
+}
+
+.content-section-video iframe {
+    width: 100%;         /* ikut lebar kolom, bukan 560px */
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
 }
 
 .content-section-about {
@@ -145,3 +166,32 @@ body {
 
 .status-ok { color: #1d7a4b; }
 .status-no { color: #b3261e; }
+
+
+
+.content-section-news img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+}
+
+.content-section-news-sub {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.content-section-news-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-section-about-sub-total {
+    display: flex;
+    flex-direction: row;
+}
+.content-section-about-sub-total-sub {
+    padding: 20px;
+}
