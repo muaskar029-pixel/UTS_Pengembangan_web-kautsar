@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="icon" href="../../design/logo/memora-ikon.svg">
+    <title>Tambah Buku · Memora Pustakawan</title>
+</head>
+<body class="staff">
+
+<aside class="staff-sidebar">
+    <a href="index.html" class="staff-logo">
+        <img src="../../design/logo/memora-ikon.svg" alt="" width="32" height="32">
+        <span>Memora</span>
+    </a>
+
+    <div class="staff-place">
+        <b>Perpustakaan Kampus Utama</b>
+        <span>Ruang pustakawan</span>
+    </div>
+
+    <nav class="staff-nav">
+        <p>Koleksi</p>
+        <a href="pustakawan-bibliografi.html">Semua bibliografi</a>
+        <a href="pustakawan-tambah-buku.html" class="staff-nav-active">Tambah buku</a>
+        <a href="catalog.html">Katalog publik</a>
+    </nav>
+
+    <div class="staff-user" id="staff-user" hidden>
+        <p id="staff-user-email"></p>
+        <button type="button" id="tombol-keluar" class="staff-logout">Keluar</button>
+    </div>
+</aside>
+
+<main class="staff-sheet">
+
+
+    <!-- Tampil setelah login -->
+    <section id="panel-tambah">
+        <p class="staff-breadcrumb"><a href="pustakawan-bibliografi.html">Semua bibliografi</a> › <span>Tambah buku</span></p>
+
+        <form id="form-buku">
+            <div class="staff-head">
+                <div>
+                    <h1>Tambah buku</h1>
+                    <p class="section-desc">Buku yang disimpan langsung tampil di katalog publik.</p>
+                </div>
+                <div class="staff-head-action">
+                    <button type="reset" class="button-outline">Kosongkan</button>
+                    <button type="submit" class="button-navy" id="tombol-simpan">Simpan buku</button>
+                </div>
+            </div>
+
+            <p class="staff-message" id="pesan-simpan" role="status"></p>
+
+            <div class="staff-columns">
+                <div class="form-card staff-card">
+                    <div class="staff-card-head">
+                        <h2>Data bibliografi</h2>
+                        <span>Wajib diisi <span class="form-required">*</span></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="judul">Judul <span class="form-required">*</span></label>
+                        <input type="text" id="judul" name="judul" maxlength="300" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="penulis">Pengarang <span class="form-required">*</span></label>
+                            <input type="text" id="penulis" name="penulis" maxlength="200" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="jenis">Jenis</label>
+                            <select id="jenis" name="jenis">
+                                <option>Buku</option>
+                                <option>Novel</option>
+                                <option>Referensi</option>
+                                <option>E-book</option>
+                                <option>Skripsi</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="penerbit">Penerbit</label>
+                            <input type="text" id="penerbit" name="penerbit" maxlength="200">
+                        </div>
+                        <div class="form-group">
+                            <label for="tahun">Tahun terbit</label>
+                            <input type="number" id="tahun" name="tahun" min="1000" step="1">
+                            <p class="form-hint" id="hint-tahun"></p>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="halaman">Jumlah halaman</label>
+                            <input type="number" id="halaman" name="halaman" min="1" step="1">
+                        </div>
+                        <div class="form-group">
+                            <label for="no_panggil">Nomor panggil</label>
+                            <input type="text" id="no_panggil" name="no_panggil" maxlength="50" placeholder="899.221 RAT g">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="status">Status</label>
+                            <select id="status" name="status">
+                                <option>Tersedia</option>
+                                <option>Dipinjam</option>
+                                <option>Baca di tempat</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="lokasi">Lokasi</label>
+                            <input type="text" id="lokasi" name="lokasi" maxlength="100" placeholder="Rak 2C">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cover">Sampul (path gambar)</label>
+                        <input type="text" id="cover" name="cover" maxlength="300" placeholder="assets/png/buku-laskar-pelangi.png">
+                        <p class="form-hint">Kosongkan jika belum ada sampul.</p>
+                    </div>
+                </div>
+
+                <aside class="form-card staff-card">
+                    <div class="staff-card-head">
+                        <h2>Pratinjau di katalog</h2>
+                        <span>seperti dilihat anggota</span>
+                    </div>
+
+                    <div class="staff-preview">
+                        <img id="pratinjau-cover" src="../../design/logo/memora-ikon.svg" alt="">
+                        <div class="catalog-book-info">
+                            <p class="catalog-book-type" id="pratinjau-jenis">Buku</p>
+                            <h3 id="pratinjau-judul">Judul buku</h3>
+                            <p class="catalog-book-author" id="pratinjau-penulis">Pengarang</p>
+                            <p class="catalog-book-detail" id="pratinjau-detail"></p>
+                            <p><span class="badge-green" id="pratinjau-status">Tersedia</span> <span id="pratinjau-lokasi"></span></p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </form>
+    </section>
+
+</main>
+
+<script type="module" src="../lib/tambah-buku.js"></script>
+</body>
+</html>

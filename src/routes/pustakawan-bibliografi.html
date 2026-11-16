@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="icon" href="../../design/logo/memora-ikon.svg">
+    <title>Semua Bibliografi · Memora Pustakawan</title>
+</head>
+<body class="staff">
+
+<aside class="staff-sidebar">
+    <a href="index.html" class="staff-logo">
+        <img src="../../design/logo/memora-ikon.svg" alt="" width="32" height="32">
+        <span>Memora</span>
+    </a>
+
+    <div class="staff-place">
+        <b>Perpustakaan Kampus Utama</b>
+        <span>Ruang pustakawan</span>
+    </div>
+
+    <nav class="staff-nav">
+        <p>Koleksi</p>
+        <a href="pustakawan-bibliografi.html" class="staff-nav-active">Semua bibliografi</a>
+        <a href="pustakawan-tambah-buku.html">Tambah buku</a>
+        <a href="catalog.html">Katalog publik</a>
+    </nav>
+</aside>
+
+<main class="staff-sheet">
+    <div class="staff-head">
+        <div>
+            <h1>Semua bibliografi</h1>
+            <p class="section-desc"><b id="jumlah-buku">0</b> judul di katalog</p>
+        </div>
+        <div class="staff-head-action">
+            <a href="pustakawan-tambah-buku.html" class="button-navy">+ Tambah buku</a>
+        </div>
+    </div>
+
+    <div class="staff-table-wrap">
+        <table class="staff-table">
+            <thead>
+                <tr>
+                    <th scope="col">Judul</th>
+                    <th scope="col">Pengarang</th>
+                    <th scope="col">Jenis</th>
+                    <th scope="col">Penerbit, tahun</th>
+                    <th scope="col">No. panggil</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Lokasi</th>
+                </tr>
+            </thead>
+
+            <!-- Isi baris di sini lewat JS. Contoh satu baris yang diharapkan:
+            <tr>
+                <td class="staff-table-title">Bumi Manusia</td>
+                <td>Pramoedya Ananta Toer</td>
+                <td>Novel</td>
+                <td>Lentera Dipantara, 2005</td>
+                <td><code>899.221 TOE b</code></td>
+                <td><span class="badge-green">Tersedia</span></td>
+                <td>Rak 2B</td>
+            </tr>
+            -->
+            <tbody id="daftar-buku">
+                <tr>
+                    <td colspan="7" class="staff-table-empty">Memuat data…</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+
+<!-- Tambahkan script kamu di sini, misalnya:
+<script type="module" src="../lib/bibliografi.js"></script> -->
+</body>
+</html>
