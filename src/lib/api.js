@@ -1,4 +1,4 @@
-import { SUPABASE_URL,SUPABASE_KEY  } from "./config.js";
+import { SUPABASE_URL,SUPABASE_KEY  } from "../config.js";
 
 async function ambilBuku() {
   const res = await fetch(SUPABASE_URL + '/rest/v1/buku?select=*', {
